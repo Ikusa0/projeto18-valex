@@ -12,7 +12,7 @@ Projeto em TypeScript e postgreSQL. API de cartões de benefícios. A API será 
 
 ```json
   {
-    x-api-key (String): "Chave API da empresa."
+    "x-api-key (String)": "Chave API da empresa."
   }
 ```
 
@@ -20,8 +20,8 @@ Projeto em TypeScript e postgreSQL. API de cartões de benefícios. A API será 
 
 ```json
   {
-    employeeId (Number): "ID do empregado."
-    cardType (String): "Tipo do cartão, deve ser: 'groceries', 'restaurant', 'transport', 'education', 'health'"
+    "employeeId (Number)": "ID do empregado."
+    "cardType (String)": "Tipo do cartão, deve ser: 'groceries', 'restaurant', 'transport', 'education', 'health'"
   }
 ```
 
@@ -31,7 +31,7 @@ Projeto em TypeScript e postgreSQL. API de cartões de benefícios. A API será 
   HTTP CODE: 201
   
   {
-    id (Number): "ID do novo cartão criado."
+    "id (Number)": "ID do novo cartão criado."
   }
 ```
 
@@ -43,7 +43,7 @@ Projeto em TypeScript e postgreSQL. API de cartões de benefícios. A API será 
 
 ```json
   {
-    cardId: "ID do card a ser ativado."
+    "cardId": "ID do card a ser ativado."
   }
 ```
 
@@ -51,9 +51,9 @@ Projeto em TypeScript e postgreSQL. API de cartões de benefícios. A API será 
 
 ```json
   {
-    employeeId (Number): "ID do empregado."
-    securityCode (String): "Código de segurança do cartão."
-    password (String): "Nova senha do cartão, precisa ter exatamente 4 dígitos numéricos."
+    "employeeId (Number)": "ID do empregado."
+    "securityCode (String)": "Código de segurança do cartão."
+    "password (String)": "Nova senha do cartão, precisa ter exatamente 4 dígitos numéricos."
   }
 ```
 
@@ -71,7 +71,7 @@ Projeto em TypeScript e postgreSQL. API de cartões de benefícios. A API será 
 
 ```json
   {
-    cardId: "ID do card a ser ativado."
+    "cardId": "ID do card a ser ativado."
   }
 ```
 
@@ -79,8 +79,8 @@ Projeto em TypeScript e postgreSQL. API de cartões de benefícios. A API será 
 
 ```json
   {
-    employeeId (Number): "ID do empregado."
-    securityCode (String): "Código de segurança do cartão."
+    "employeeId (Number)": "ID do empregado."
+    "securityCode (String)": "Código de segurança do cartão."
   }
 ```
 
@@ -90,23 +90,23 @@ Projeto em TypeScript e postgreSQL. API de cartões de benefícios. A API será 
   HTTP CODE: 200
 
   {
-    balance (Number): "Saldo do cartão.",
-    transactions (Object[]): [
+    "balance (Number)": "Saldo do cartão.",
+    "transactions (Object[])": [
       { 
-        id (Number): "ID da transação.", 
-        cardId (Number): "ID do cartão", 
-        businessId (Number): "ID do estabelecimento onde a compra foi feita.", 
-        businessName (String): "Nome do estabelecimento onde a compra foi feita.", 
-        timestamp (Date): "Data da compra no formato DD/MM/YYYY", 
-        amount (Number): "Total gasto em centavos." 
+        "id (Number)": "ID da transação.", 
+        "cardId (Number)": "ID do cartão", 
+        "businessId (Number)": "ID do estabelecimento onde a compra foi feita.", 
+        "businessName (String)": "Nome do estabelecimento onde a compra foi feita.", 
+        "timestamp (Date)": "Data da compra no formato DD/MM/YYYY", 
+        "amount (Number)": "Total gasto em centavos." 
       }
     ]
-    recharges (Object[]): [
+    "recharges (Object[])": [
       { 
-        id (Number): "ID da recarga.",
-        cardId (Number): "ID do cartão",  
-        timestamp (Date): "Data da recarga no formato DD/MM/YYYY",
-        amount (Number): "Total recarregado em centavos." 
+        "id (Number)": "ID da recarga.",
+        "cardId (Number)": "ID do cartão",  
+        "timestamp (Date)": "Data da recarga no formato DD/MM/YYYY",
+        "amount (Number)": "Total recarregado em centavos." 
       }
     ]
   }
@@ -120,7 +120,7 @@ Projeto em TypeScript e postgreSQL. API de cartões de benefícios. A API será 
 
 ```json
   {
-    cardId: "ID do card a ser ativado."
+    "cardId": "ID do card a ser ativado."
   }
 ```
 
@@ -128,9 +128,9 @@ Projeto em TypeScript e postgreSQL. API de cartões de benefícios. A API será 
 
 ```json
   {
-    employeeId (Number): "ID do empregado."
-    securityCode (String): "Código de segurança do cartão."
-    password (String): "Senha do cartão, precisa ter exatamente 4 dígitos numéricos."
+    "employeeId (Number)": "ID do empregado."
+    "securityCode (String)": "Código de segurança do cartão."
+    "password (String)": "Senha do cartão, precisa ter exatamente 4 dígitos numéricos."
   }
 ```
 
@@ -148,7 +148,7 @@ Projeto em TypeScript e postgreSQL. API de cartões de benefícios. A API será 
 
 ```json
   {
-    cardId: "ID do card a ser ativado."
+    "cardId": "ID do card a ser ativado."
   }
 ```
 
@@ -156,9 +156,9 @@ Projeto em TypeScript e postgreSQL. API de cartões de benefícios. A API será 
 
 ```json
   {
-    employeeId (Number): "ID do empregado."
-    securityCode (String): "Código de segurança do cartão."
-    password (String): "Senha do cartão, precisa ter exatamente 4 dígitos numéricos."
+    "employeeId (Number)": "ID do empregado."
+    "securityCode (String)": "Código de segurança do cartão."
+    "password (String)": "Senha do cartão, precisa ter exatamente 4 dígitos numéricos."
   }
 ```
 
@@ -176,7 +176,7 @@ Projeto em TypeScript e postgreSQL. API de cartões de benefícios. A API será 
 
 ```json
   {
-    x-api-key (String): "Chave API da empresa."
+    "x-api-key (String)": "Chave API da empresa."
   }
 ```
 
@@ -184,7 +184,7 @@ Projeto em TypeScript e postgreSQL. API de cartões de benefícios. A API será 
 
 ```json
   {
-    cardId: "ID do card a ser ativado."
+    "cardId": "ID do card a ser ativado."
   }
 ```
 
@@ -192,7 +192,7 @@ Projeto em TypeScript e postgreSQL. API de cartões de benefícios. A API será 
 
 ```json
   {
-    amount (Number): "Total da recarga em centavos."
+    "amount (Number)": "Total da recarga em centavos."
   }
 ```
 
@@ -210,7 +210,7 @@ Projeto em TypeScript e postgreSQL. API de cartões de benefícios. A API será 
 
 ```json
   {
-    cardId: "ID do card a ser ativado."
+    "cardId": "ID do card a ser ativado."
   }
 ```
 
@@ -218,9 +218,9 @@ Projeto em TypeScript e postgreSQL. API de cartões de benefícios. A API será 
 
 ```json
   {
-    amount (Number): "Total da recarga em centavos.",
-    password (String): "Senha do cartão, precisa ter exatamente 4 dígitos numéricos.",
-    businessId (Number): "ID do estabelecimento onde a compra foi feita."
+    "amount (Number)": "Total da recarga em centavos.",
+    "password (String)": "Senha do cartão, precisa ter exatamente 4 dígitos numéricos.",
+    "businessId (Number)": "ID do estabelecimento onde a compra foi feita."
   }
 ```
 
